@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pop_mgcMain", "pop_mgcMain\pop_mgcMain.csproj", "{C7293A6D-66D4-453E-ACC9-94E3F738C862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7293A6D-66D4-453E-ACC9-94E3F738C862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7293A6D-66D4-453E-ACC9-94E3F738C862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7293A6D-66D4-453E-ACC9-94E3F738C862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7293A6D-66D4-453E-ACC9-94E3F738C862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A35932B-C655-4225-A87E-6287B68B4FC4}
+	EndGlobalSection
+EndGlobal
