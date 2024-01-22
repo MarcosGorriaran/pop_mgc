@@ -2,20 +2,40 @@
 {
     public class PopProject
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             const string ProvideDate = "Introdueix el dia, mes i any";
             const string FormatError = "El format no és correcte";
             const string CorrectDate = "La data és correcta";
-
+            const string ProvideOpt = "Elige una de las opciones: ";
+            const string Jump = "Saltar", Run = "Correr", Crouch = "Agacharse", Hide = "Esconderse";
+            const char JumpOpt = 'A', RunOpt = 'B', CrouchOpt = 'C', HideOpt = 'D';
+            const char LineJump = '\n', SplitOptText = '.';
+            char opt;
             int day, month, year;
 
+            Console.Write($"{JumpOpt}{SplitOptText} {Jump}{LineJump}" +
+                          $"{RunOpt}{SplitOptText} {Run}{LineJump}" +
+                          $"{CrouchOpt}{SplitOptText} {Crouch}{LineJump}" +
+                          $"{HideOpt}{SplitOptText} {Hide}{LineJump}" +
+                          $"{ProvideOpt}");
+            opt = Convert.ToChar(Console.ReadLine().ToUpper());
+
+            Console.WriteLine(opt switch
+            {
+                JumpOpt => Jump,
+                RunOpt => Run,
+                CrouchOpt => Crouch,
+                HideOpt => Hide,
+                _ => FormatError
+            });
             Console.WriteLine(ProvideDate);
             day = Convert.ToInt32(Console.ReadLine());
             month = Convert.ToInt32(Console.ReadLine());
             year = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(valida(day, month, year) ? FormatError : CorrectDate);
         }
+
 
         public static bool valida(int day, int month, int year)
         {
